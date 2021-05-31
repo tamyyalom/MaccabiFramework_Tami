@@ -13,6 +13,8 @@ public struct Route {
     
     public static let shared = Route()
     
+    public init() {}
+    
     public func createPath(sourcePlaceMark : MKPlacemark, destinationPlaceMark : MKPlacemark, completion: @escaping (MKRoute?) -> Void) {
         
         let sourceMapItem = MKMapItem(placemark: sourcePlaceMark)
